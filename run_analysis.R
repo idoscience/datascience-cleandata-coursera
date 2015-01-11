@@ -28,7 +28,10 @@ y_all[,1] <- activity[y_all[,1],2]
 names(y_all) <- "Activity"
 names(subject_all) <- "Subject"
 
-#From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+# From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+# The column we need start at 3 and ends in 68
+col_start <- 3
+col_end <- 68
 all <- cbind(subject_all,y_all,x_all)
-tidy_data <- ddply(all, .(Subject, Activity), function(x) colMeans(x[, 3:68]))
+tidy_data <- ddply(all, .(Subject, Activity), function(x) colMeans(x[, col_start:col_end]))
 write.table(tidy_data,file="tidy_data.txt",row.names=FALSE)
