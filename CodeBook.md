@@ -8,7 +8,7 @@ Code book for the tidy data
 2 .  Activity
 
     Activities performed by each person
-    (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+    (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING)
 
 3 .  tBodyAcc-mean()-X
 
