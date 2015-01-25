@@ -3,7 +3,7 @@ Getting and Cleaning Data Course Project
 
 This repository is for the course project of the course Getting and cleaning data in Coursera.
 
-It consists of run_analysis.r script which performs the task fo tidying up the data.
+It consists of run_analysis.r script which performs the task fo tidying up the data. The Codebook.md contains the variable description.
 
 Workflow
 ========
