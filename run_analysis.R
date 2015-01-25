@@ -15,6 +15,7 @@ y_all <- rbind(y_train, y_test)
 subject_all <- rbind(subject_train, subject_test)
 
 # Extracts only the measurements on the mean and standard deviation for each measurement
+# Grep is used for that
 features <- read.table("UCI HAR Dataset/features.txt")
 read_min_std_features <- grep("(mean|std)\\(\\)", features[,2])
 x_all <- x_all[, read_min_std_features]
